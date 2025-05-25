@@ -1,11 +1,12 @@
+from utilidades import dividir
+
 def saludar(nombre):
     print("Hola " + nombre)
 
-def dividir(a, b):
-    return a / b  # Error: división por cero
-
 saludar("Mundo")
-print(dividir(10, 0))
 
-
-# Este archivo es parte del laboratorio Codacy
+# Corrección: manejo de división por cero
+a = 10
+b = 0
+resultado = dividir(a, b)
+print(resultado)
