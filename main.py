@@ -1,6 +1,8 @@
 def saludar(nombre):
     print("Hola " + nombre)
 
-# Error de sintaxis intencional
-def funcion_erronea(
-    print("Este código tiene un error de sintaxis")
+def dividir(a, b):
+    return a / b  # Error: división por cero
+
+saludar("Mundo")
+print(dividir(10, 0))
